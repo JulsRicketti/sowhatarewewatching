@@ -2,6 +2,10 @@
 
 let config = {}
 
+config.X_RAPID_API_BASE_URL = process.env.X_RAPID_API_BASE_URL
+config.X_RAPID_API_HOST = process.env.X_RAPID_API_HOST
+config.X_RAPID_API_KEY = process.env.X_RAPID_API_KEY
+
 // All the above env vars are required
 Object.keys(config).forEach(key => {
   const value = config[key]

@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { default as NextHead } from 'next/head'
-
-import 'bootstrap/dist/css/bootstrap.css'
 import '../../scss/styles.scss'
 
 export default class Head extends React.Component {
