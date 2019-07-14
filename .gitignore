@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+.env
+Thumbs.db
+.next
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea
+.compiled

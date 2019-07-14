@@ -1,0 +1,19 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "ecmaFeatures": {
+        "classes": true,
+        "modules": true
+    },
+    "env": {
+        "mocha": true,
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "no-process-env": "error"
+    }
+}

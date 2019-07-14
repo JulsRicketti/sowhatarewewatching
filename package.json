@@ -1,0 +1,81 @@
+{
+  "name": "sowhatarewewatching",
+  "version": "1.0.0",
+  "description": "Suggests what to watch on netflix based on your country",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "7.0.0-beta.51",
+    "@babel/register": "7.0.0-beta.51",
+    "@zeit/next-css": "0.2.0",
+    "@zeit/next-sass": "0.2.0",
+    "bootstrap": "4.1.1",
+    "css-loader": "0.28.11",
+    "express": "4.16.3",
+    "file-loader": "1.1.11",
+    "helmet": "3.12.1",
+    "jquery": "3.3.1",
+    "next": "6.1.1",
+    "node-sass": "4.9.0",
+    "pm2": "3.2.9",
+    "prop-types": "15.6.2",
+    "qs": "6.5.2",
+    "raw-loader": "0.5.1",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "react-scrollspy": "3.3.5",
+    "reactstrap": "6.2.0",
+    "recompose": "0.27.1",
+    "sass-loader": "7.0.3",
+    "winston": "3.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.5",
+    "dotenv": "6.2.0",
+    "eslint": "5.0.1",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-plugin-react": "7.10.0",
+    "eslint-plugin-standard": "3.1.0",
+    "gulp": "3.9.1",
+    "mocha": "5.2.0",
+    "nodemon": "1.17.5",
+    "sinon": "6.0.1",
+    "superagent": "3.8.3"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "scripts": {
+    "dev": "node -r dotenv/config server.js",
+    "dev:watch": "nodemon -r dotenv/config server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JulsRicketti/sowhatarewewatching"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulsRicketti/sowhatarewewatching/issues"
+  },
+  "nodemonConfig": {
+    "watch": [
+      ".env",
+      ".eslintrc.json",
+      "anonymous-user.js",
+      "config.js",
+      "next.config.js",
+      "server.js",
+      "URL.js"
+    ],
+    "ignore": [],
+    "delay": "2500"
+  },
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.0"
+  }
+}
